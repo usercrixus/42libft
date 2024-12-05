@@ -7,12 +7,12 @@ OBJS = \
 
 all: libftprintf.a
 
-libftprintf.a: libft.a $(OBJS)
+libftprintf.a: ./../ft_base/libft.a $(OBJS)
 	# Combine libft.a and ftprintf objects into libftprintf.a
 	cp ../ft_base/libft.a libftprintf.a
 	ar rcs libftprintf.a $(OBJS)
 
-libft.a:
+./../ft_base/libft.a:
 	make -C ../ft_base all
 
 %.o: %.c

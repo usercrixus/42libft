@@ -3,11 +3,11 @@ OBJS = \
 
 all: libftgnl.a
 
-libftgnl.a: libftstr.a $(OBJS)
+libftgnl.a: ./../ft_str/libftstr.a $(OBJS)
 	cp ../ft_str/libftstr.a libftgnl.a
 	ar rcs $@ $(OBJS)
 
-libftstr.a:
+./../ft_str/libftstr.a:
 	make -C ./../ft_str all
 
 %.o: %.c \
