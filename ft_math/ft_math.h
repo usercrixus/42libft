@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MATH_H
-# define MATH_H
+#ifndef FT_MATH_H
+# define FT_MATH_H
 
 // base.c
 int	ft_abs(int x);
