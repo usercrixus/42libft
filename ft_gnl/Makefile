@@ -10,7 +10,7 @@ libftgnl.a: ./../ft_str/libftstr.a $(OBJS)
 ./../ft_str/libftstr.a:
 	make -C ./../ft_str all
 
-%.o: %.c \
+%.o: %.c
 	cc -c $< -Wall -Wextra -Werror -o $@
 
 clean:

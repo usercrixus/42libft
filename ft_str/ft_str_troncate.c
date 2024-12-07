@@ -6,7 +6,7 @@
 /*   By: achaisne <achaisne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 18:58:41 by achaisne          #+#    #+#             */
-/*   Updated: 2024/12/02 15:17:13 by achaisne         ###   ########.fr       */
+/*   Updated: 2024/12/07 07:49:01 by achaisne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_str_troncate_begin(t_str *str, unsigned long long size)
 	str->start += size;
 	while (str->start >= T_STR_BUFFER_SIZE)
 	{
-		if (!str->head || ! str->head->next)
+		if (!str->head)
 			return (0);
 		buffer = str->head;
 		str->head = str->head->next;

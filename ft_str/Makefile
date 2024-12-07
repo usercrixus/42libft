@@ -10,7 +10,7 @@ all: libftstr.a
 libftstr.a: $(OBJS)
 	ar rcs $@ $^
 
-%.o: %.c \
+%.o: %.c
 	cc -c $< -Wall -Wextra -Werror -o $@
 
 clean:
