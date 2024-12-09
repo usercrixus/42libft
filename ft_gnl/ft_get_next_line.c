@@ -6,7 +6,7 @@
 /*   By: achaisne <achaisne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 18:58:26 by achaisne          #+#    #+#             */
-/*   Updated: 2024/12/09 14:08:01 by achaisne         ###   ########.fr       */
+/*   Updated: 2024/12/09 14:09:19 by achaisne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,6 @@ char	*get_next_line(int fd)
 
 	if (fd < 0)
 		return (ft_str_free(str[~fd]), str[~fd] = 0, (char *)0);
-		return (ft_str_free(str[~fd]), str[~fd] = 0,  (char *)0);
 	if (fd < 0 || fd >= 1024)
 		return (0);
 	if (!str[fd])
