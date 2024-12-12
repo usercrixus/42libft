@@ -16,7 +16,7 @@ libftprintf.a: ./../ft_base/libft.a $(OBJS)
 	make -C ../ft_base all
 
 %.o: %.c
-	cc -c $< -Wall -Wextra -Werror -o $@
+	cc -c $< -Wall -Wextra -Werror -g3 -o $@
 
 clean:
 	rm -f $(OBJS)

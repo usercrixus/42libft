@@ -11,7 +11,7 @@ libftstr.a: $(OBJS)
 	ar rcs $@ $^
 
 %.o: %.c
-	cc -c $< -Wall -Wextra -Werror -o $@
+	cc -c $< -Wall -Wextra -Werror -g3 -o $@
 
 clean:
 	rm -f $(OBJS)

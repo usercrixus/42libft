@@ -11,7 +11,7 @@ libftgnl.a: ./../ft_str/libftstr.a $(OBJS)
 	make -C ./../ft_str all
 
 %.o: %.c
-	cc -c $< -Wall -Wextra -Werror -o $@
+	cc -c $< -Wall -Wextra -Werror -g3 -o $@
 
 clean:
 	rm -f $(OBJS)

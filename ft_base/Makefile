@@ -40,10 +40,7 @@ libft.a: $(OBJS)
 	ar rcs $@ $^
 
 %.o: %.c \
-	cc -c $< -Wall -Wextra -Werror -o $@
-
-test: $(OBJS)
-	cc $^ test.c -o test.out && ./test.out && rm test.out
+	cc -c $< -Wall -Wextra -Werror -g3 -o $@
 
 clean:
 	rm -f $(OBJS)
