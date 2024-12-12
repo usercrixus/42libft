@@ -6,7 +6,7 @@
 /*   By: achaisne <achaisne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 17:17:36 by achaisne          #+#    #+#             */
-/*   Updated: 2024/11/11 05:35:48 by achaisne         ###   ########.fr       */
+/*   Updated: 2024/12/12 16:33:51 by achaisne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static char	*get_string(const char *s, int start, int end)
 	return (buffer);
 }
 
-static void	clean(char **result)
+void	free_split(char **result)
 {
 	int	i;
 
@@ -98,6 +98,6 @@ char	**ft_split(char const *s, char c)
 	if (!result)
 		return (0);
 	if (!populate(s, result, c))
-		clean(result);
+		free_split(result);
 	return (result);
 }
