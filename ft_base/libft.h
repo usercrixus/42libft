@@ -6,7 +6,7 @@
 /*   By: achaisne <achaisne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 22:43:19 by achaisne          #+#    #+#             */
-/*   Updated: 2024/12/12 16:38:52 by achaisne         ###   ########.fr       */
+/*   Updated: 2024/12/30 15:28:58 by achaisne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(const char *s1, const char *set);
 char			**ft_split(char const *s, char c);
+int				ft_split_size(char **strings);
 void			ft_free_split(char **result);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
