@@ -33,6 +33,7 @@ OBJS = \
 	ft_strrchr.o \
 	ft_tolower.o \
 	ft_strlcpy.o \
+	ft_split_size.o \
 
 all: libft.a
 
