@@ -6,7 +6,7 @@
 /*   By: achaisne <achaisne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 18:58:45 by achaisne          #+#    #+#             */
-/*   Updated: 2024/12/07 07:55:09 by achaisne         ###   ########.fr       */
+/*   Updated: 2025/01/09 04:33:50 by achaisne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include "../ft_base/libft.h"
 
 # define T_STR_BUFFER_SIZE 1024
 

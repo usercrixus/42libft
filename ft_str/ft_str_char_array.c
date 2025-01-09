@@ -6,7 +6,7 @@
 /*   By: achaisne <achaisne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 15:15:35 by achaisne          #+#    #+#             */
-/*   Updated: 2024/12/07 07:42:58 by achaisne         ###   ########.fr       */
+/*   Updated: 2025/01/09 04:34:05 by achaisne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_str_get_char_array(t_str *str, unsigned long long line_size)
 	unsigned long long	i;
 
 	if (line_size <= 0 || !str)
-		return (0);
+		return (ft_strdup(""));
 	line = (char *)malloc(sizeof(char) * (line_size + 1));
 	if (!line)
 		return (0);

@@ -5,9 +5,13 @@ OBJS = \
 	ft_str_troncate.o \
 	
 
-all: libftstr.a
+all: libftbase.a libftstr.a
+
+libftbase.a:
+	make -C ../ft_base all
 
 libftstr.a: $(OBJS)
+	cp ../ft_base/libft.a $@
 	ar rcs $@ $^
 
 %.o: %.c
