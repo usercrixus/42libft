@@ -6,7 +6,7 @@
 /*   By: achaisne <achaisne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 18:58:45 by achaisne          #+#    #+#             */
-/*   Updated: 2025/05/06 08:06:48 by achaisne         ###   ########.fr       */
+/*   Updated: 2025/05/06 08:17:37 by achaisne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ typedef struct s_str
 t_str	*ft_str_create(void);
 void	ft_str_free(t_str *str);
 int		ft_str_push(t_str *str, char *c, ssize_t len);
-int ft_str_multiple_push(t_str *str, int nbArg, ...);
+int		ft_str_multiple_push(t_str *str, int nbArg, ...);
 char	*ft_str_get_char_array(t_str *str, unsigned long long line_size);
 int		ft_str_troncate_begin(t_str *str, unsigned long long size);
 
