@@ -6,7 +6,7 @@
 /*   By: achaisne <achaisne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 18:58:41 by achaisne          #+#    #+#             */
-/*   Updated: 2024/12/02 15:41:23 by achaisne         ###   ########.fr       */
+/*   Updated: 2025/05/06 08:06:36 by achaisne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,21 @@ int	ft_str_push(t_str *str, char *c, ssize_t len)
 	}
 	str->size += len;
 	return (1);
+}
+
+int ft_str_multiple_push(t_str *str, int nbArg, ...)
+{
+	va_list ap;
+	char *buffStr;
+	int i;
+	
+	va_start(ap, nbArg);
+	i = 0;
+	while (i < nbArg)
+	{
+		buffStr = va_arg(ap, char *);
+		ft_str_push(str, buffStr, ft_strlen(buffStr));
+		i++;
+	}
+    return 0;
 }
