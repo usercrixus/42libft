@@ -7,7 +7,7 @@ all: libftmath.a
 libftmath.a: $(OBJS)
 	ar rcs $@ $^
 
-%.o: %.c \
+%.o: %.c
 	cc -c $< -Wall -Wextra -Werror -g3 -fPIC -o $@
 
 clean:
