@@ -42,7 +42,7 @@ libft.a: $(OBJS)
 	ar rcs $@ $^
 
 %.o: %.c \
-	cc -c $< -Wall -Wextra -Werror -g3 -o $@
+	cc -c $< -Wall -Wextra -Werror -g3 -fPIC -o $@
 
 clean:
 	rm -f $(OBJS)
